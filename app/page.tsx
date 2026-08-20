@@ -261,15 +261,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="contact-section section" id="contact">
-          <p className="section-kicker">Contact</p>
-          <h2>Let&apos;s talk about politics, data, or collaboration.</h2>
-          <div className="contact-actions">
-            <span className="button button-light email-pill">murat.yildirim [at] uis.no</span>
-            <a className="text-link light-link" href="https://orcid.org/0000-0001-7120-6020">ORCID ↗</a>
-            <a className="text-link light-link" href="https://github.com/tmyildirim">GitHub ↗</a>
-          </div>
-        </section>
       </main>
 
       <footer>
