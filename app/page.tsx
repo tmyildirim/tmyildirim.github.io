@@ -237,8 +237,8 @@ export default function Home() {
 
         <section className="talks-section section" id="talks">
           <div>
-            <p className="section-kicker">Selected talks</p>
-            <h2>Recent invited presentations</h2>
+            <p className="section-kicker">Research talks</p>
+            <h2>Recent invited talks</h2>
           </div>
           <div className="talk-list">
             {selectedTalks.map((talk) => (
