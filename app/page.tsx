@@ -19,45 +19,6 @@ const featuredPublications = publications.filter(
     item.title ===
       "The Determinants of the Media Coverage of Politicians: The Role of Parliamentary Activities",
 );
-const journalCovers = [
-  {
-    name: "American Political Science Review",
-    shortName: "APSR",
-    image: "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS000305541700020X/resource/name/firstPage-S000305541700020Xa.jpg",
-    href: "https://doi.org/10.1017/s0003055422000776",
-  },
-  {
-    name: "British Journal of Political Science",
-    shortName: "BJPS",
-    image: "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0007123423000686/resource/name/firstPage-pdf-S0007123423000686a.jpg",
-    href: "https://doi.org/10.1017/s0007123421000235",
-  },
-  {
-    name: "Political Science Research and Methods",
-    shortName: "PSRM",
-    image: "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS204984702100073X/resource/name/firstPage-pdf-S204984702100073Xa.jpg",
-    href: "https://doi.org/10.1017/psrm.2025.33",
-  },
-  {
-    name: "European Journal of Political Research",
-    shortName: "EJPR",
-    image: "https://qualigov.pro.br/media/resize/1920x1920/blogpost/26/65eb48bfe0d6f.jpg",
-    href: "https://doi.org/10.1111/1475-6765.12733",
-  },
-  {
-    name: "Political Behavior",
-    shortName: "Political Behavior",
-    image: "https://media.springernature.com/lw400/springer-static/cover-hires/journal/11109/46/4?as=jpg",
-    href: "https://doi.org/10.1007/s11109-021-09722-w",
-  },
-  {
-    name: "Political Communication",
-    shortName: "Political Communication",
-    image: "https://zhukovyuri.github.io/images/UPCP.jpg",
-    href: "https://doi.org/10.1080/10584609.2024.2364072",
-  },
-];
-
 export default function Home() {
   return (
     <div className="site-shell">
@@ -165,28 +126,6 @@ export default function Home() {
               My work spans political behavior, representation, public policy, identity politics,
               legislative studies, and political communication.
             </p>
-          </div>
-
-          <div className="journal-showcase" aria-labelledby="journal-showcase-title">
-            <p className="mini-label" id="journal-showcase-title">Published in</p>
-            <div className="journal-cover-row">
-              {journalCovers.map((journal) => (
-                <a
-                  href={journal.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="journal-cover"
-                  key={journal.name}
-                  aria-label={`${journal.name}: view publication`}
-                >
-                  <span className="cover-frame">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={journal.image} alt={`${journal.name} journal cover`} loading="lazy" />
-                  </span>
-                  <span>{journal.shortName}</span>
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="featured-publications">
