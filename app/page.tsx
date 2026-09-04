@@ -56,7 +56,6 @@ export default function Home() {
               height={1350}
               fetchPriority="high"
             />
-            <figcaption>University of Stavanger</figcaption>
           </figure>
         </section>
 
