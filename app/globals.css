@@ -217,7 +217,8 @@ h2 { margin-bottom: 0; font-size: clamp(2.25rem, 4vw, 4.35rem); line-height: 1.0
 .book-list article:nth-child(3n) { border-right: 0; }
 .book-list p { color: var(--teal); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .book-list h3 { margin: 42px 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; font-weight: 500; line-height: 1.35; }
-.book-list span { color: var(--ink-soft); font-size: 0.8rem; line-height: 1.55; }
+.book-list span { display: block; color: var(--ink-soft); font-size: 0.8rem; line-height: 1.55; }
+.book-list .chapter-book { margin-bottom: 8px; color: var(--ink); font-size: 0.86rem; }
 
 .data-section { width: 100%; max-width: none; padding-right: max(32px, calc((100vw - 1400px) / 2)); padding-left: max(32px, calc((100vw - 1400px) / 2)); background: var(--sage); }
 .data-heading { display: grid; grid-template-columns: 0.5fr 1.5fr; gap: 70px; align-items: start; }
