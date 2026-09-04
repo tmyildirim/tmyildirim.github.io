@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tmyildirim.github.io"),
-  title: "Tevfik Murat Yildirim · Professor of Political Science",
+  title: "Tevfik Murat Yildirim | Professor of Political Science",
   description:
     "Professor of Political Science at the University of Stavanger. Research on representation, public opinion, policy agendas, and political communication.",
   openGraph: {
-    title: "Tevfik Murat Yildirim · Professor of Political Science",
+    title: "Tevfik Murat Yildirim | Professor of Political Science",
     description:
       "Professor of Political Science at the University of Stavanger. Research on representation, public opinion, policy agendas, and political communication.",
     url: "https://tmyildirim.github.io",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tevfik Murat Yildirim · Professor of Political Science",
+    title: "Tevfik Murat Yildirim | Professor of Political Science",
     description:
       "Professor of Political Science at the University of Stavanger. Research on representation, public opinion, policy agendas, and political communication.",
     images: ["/og.png"],
