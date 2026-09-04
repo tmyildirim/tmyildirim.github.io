@@ -246,19 +246,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="public-section section">
-          <p className="section-kicker">Beyond journals</p>
-          <h2>Research for public debate.</h2>
-          <p>
-            I contribute to public-facing discussions of politics, and my work has reached readers
-            through research features, interviews, essays, and reviews.
-          </p>
-          <div className="outlet-cloud" aria-label="Media and public scholarship outlets">
-            {["The Washington Post", "LSE", "The Conversation", "Roper Center", "PsyPost", "John Smith Centre", "Journalisten", "Forskning.no"].map((outlet) => (
-              <span key={outlet}>{outlet}</span>
-            ))}
-          </div>
-        </section>
 
       </main>
 
