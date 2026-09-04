@@ -194,7 +194,7 @@ export default function Home() {
         <section className="data-section section" id="data">
           <div className="data-heading">
             <p className="section-kicker">Open research</p>
-            <h2>Datasets built for questions across time and place.</h2>
+            <h2>Datasets</h2>
           </div>
           <div className="data-grid">
             {datasets.map((dataset, index) => (
