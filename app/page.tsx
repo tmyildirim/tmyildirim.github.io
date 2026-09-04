@@ -179,7 +179,12 @@ export default function Home() {
                 <article key={item.title}>
                   <p>{item.type} · {item.year}</p>
                   <h3>{item.title}</h3>
-                  <span>{item.detail}</span>
+                  {item.type === "Chapter" && item.bookTitle && (
+                    <span className="chapter-book">In <em>{item.bookTitle}</em></span>
+                  )}
+                  <span>
+                    {[item.collaborators, item.publisher].filter(Boolean).join(" · ")}
+                  </span>
                 </article>
               ))}
             </div>
