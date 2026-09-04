@@ -39,13 +39,22 @@ export const publications: Publication[] = [
   { year: 2017, title: "Budgetary Change in Authoritarian and Democratic Regimes", authors: "Frank R. Baumgartner, Marcello Carammia, Derek Epp, Ben Noble, Beatriz Rey, and T. Murat Yildirim", venue: "Journal of European Public Policy", href: "https://doi.org/10.1080/13501763.2017.1296482", note: "Reprinted in Political Budgeting across Europe (Routledge, 2019)" },
 ];
 
-export const booksAndChapters = [
-  { year: 2020, title: "Political Stability, Democracy and Agenda Dynamics in Turkey", detail: "With Alper T. Bulut · Palgrave Macmillan", type: "Book" },
-  { year: 2022, title: "Gender Differences in the Prioritization of Corruption as the Most Important Problem in the US: 1939-2015", detail: "In Norms, Gender and Corruption · Edward Elgar", type: "Chapter" },
-  { year: 2022, title: "The Role of Experts in Populist Politics: An Overview", detail: "With Liv Sunnercrantz · In Populism and Science in Europe · Palgrave Macmillan", type: "Chapter" },
-  { year: 2021, title: "Legislative Debates in the Turkish Grand National Assembly", detail: "In The Politics of Legislative Debate · Oxford University Press", type: "Chapter" },
-  { year: 2021, title: "Legislative Debate in the Malawi Parliament", detail: "With Nikolaos Frantzeskakis and Michael Wahman · Oxford University Press", type: "Chapter" },
-  { year: 2019, title: "The Turkish Policy Agendas Project", detail: "With Alper T. Bulut · In Comparative Policy Agendas · Oxford University Press", type: "Chapter" },
+export type BookContribution = {
+  year: number;
+  title: string;
+  type: "Book" | "Chapter";
+  bookTitle?: string;
+  collaborators?: string;
+  publisher: string;
+};
+
+export const booksAndChapters: BookContribution[] = [
+  { year: 2020, title: "Political Stability, Democracy and Agenda Dynamics in Turkey", collaborators: "With Alper T. Bulut", publisher: "Palgrave Macmillan", type: "Book" },
+  { year: 2022, title: "Gender Differences in the Prioritization of Corruption as the Most Important Problem in the US: 1939-2015", bookTitle: "Norms, Gender and Corruption", publisher: "Edward Elgar", type: "Chapter" },
+  { year: 2022, title: "The Role of Experts in Populist Politics: An Overview", bookTitle: "Populism and Science in Europe", collaborators: "With Liv Sunnercrantz", publisher: "Palgrave Macmillan", type: "Chapter" },
+  { year: 2021, title: "Legislative Debates in the Turkish Grand National Assembly", bookTitle: "The Politics of Legislative Debate", publisher: "Oxford University Press", type: "Chapter" },
+  { year: 2021, title: "Legislative Debate in the Malawi Parliament", bookTitle: "The Politics of Legislative Debate", collaborators: "With Nikolaos Frantzeskakis and Michael Wahman", publisher: "Oxford University Press", type: "Chapter" },
+  { year: 2019, title: "The Turkish Policy Agendas Project", bookTitle: "Comparative Policy Agendas: Theory, Tools, Data", collaborators: "With Alper T. Bulut", publisher: "Oxford University Press", type: "Chapter" },
 ];
 
 export const researchThemes = [
